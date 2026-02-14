@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SeniorCare | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+
+      /* ✅ Clear background image */
+     background: url('images/01.jpg')
+                  no-repeat center center fixed;
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-box {
+      background-color: rgba(255, 255, 255, 0.30); /* Slight transparency for glass effect */
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #4b3c80;
+      margin-bottom: 40px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn-container a {
+      margin-bottom: 20px;
+    }
+
+    .btn-role {
+      background-color: rgba(133, 100, 255, 0.95); /* Light violet */
+      color: white;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+
+    .btn-role:hover {
+      background-color: rgba(110, 80, 240, 1);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .card-box {
+        padding: 35px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .btn-role {
+        font-size: 15px;
+        padding: 12px;
+      }
+
+      .btn-container a {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-box">
+    <h1>SeniorCare</h1>
+
+    <div class="btn-container">
+	  <a href="adminlogin.html" class="btn btn-role">Login as Admin</a>
+      <a href="seniorregister.html" class="btn btn-role">Register as Senior</a>
+      <a href="seniorlogin.html" class="btn btn-role">Login as Senior</a>
+      <a href="caretakerlogin.html" class="btn btn-role">Login as Caretaker</a>
+    </div>
+
+    <footer>&copy; 2025 SeniorCare | Designed by Dipali Mali</footer>
+  </div>
+
+</body>
+</html>
